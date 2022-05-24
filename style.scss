@@ -1,0 +1,121 @@
+/* General styles and variables */
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+$primary-colour: hsl(25, 97%, 53%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $very-dark-blue;
+  font-family: "Overpass", sans-serif;
+  color: $white;
+}
+
+a {
+  color: $primary-colour;
+}
+
+.invisible {
+  display: none;
+}
+
+.challenge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: Min(90%, 380px);
+  padding: 2rem 1.5rem;
+  background: linear-gradient(hsl(213, 19%, 15%), hsl(216, 12%, 12%));
+  border-radius: 15px;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.text {
+  font-size: 0.95rem;
+  color: $medium-grey;
+}
+
+/* Rating state */
+.rate__icon {
+  padding: 0.8rem;
+  background-color: $dark-blue;
+  border-radius: 50%;
+}
+
+.rate__numbers {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.7rem 0;
+  list-style: none;
+}
+
+.rate__number {
+  padding: 0.8rem 1.2rem;
+  background-color: $dark-blue;
+  color: $light-grey;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: $primary-colour;
+    color: $white;
+    cursor: pointer;
+  }
+}
+
+.rate__number--active {
+  background-color: $light-grey;
+  color: $white;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: $primary-colour;
+  color: $white;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 30px;
+
+  &:hover,
+  &:active {
+    background-color: $white;
+    color: $primary-colour;
+    cursor: pointer;
+  }
+}
+
+/* Thank you state */
+.thank:not(.invisible) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.thank__rating {
+  padding: 0.5rem 0.7rem;
+  margin: 1.5rem auto 1rem auto;
+  background-color: $dark-blue;
+  color: $primary-colour;
+  border-radius: 30px;
+}

@@ -1,0 +1,135 @@
+/* General styles and variables */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+a {
+  color: #fb7413;
+}
+
+.invisible {
+  display: none;
+}
+
+.challenge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: Min(90%, 380px);
+  padding: 2rem 1.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f262e), to(#1b1e22));
+  background: linear-gradient(#1f262e, #1b1e22);
+  border-radius: 15px;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.text {
+  font-size: 0.95rem;
+  color: #7c8798;
+}
+
+/* Rating state */
+.rate__icon {
+  padding: 0.8rem;
+  background-color: #252d37;
+  border-radius: 50%;
+}
+
+.rate__numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.7rem 0;
+  list-style: none;
+}
+
+.rate__number {
+  padding: 0.8rem 1.2rem;
+  background-color: #252d37;
+  color: #959eac;
+  border-radius: 50%;
+}
+
+.rate__number:hover {
+  background-color: #fb7413;
+  color: white;
+  cursor: pointer;
+}
+
+.rate__number--active {
+  background-color: #959eac;
+  color: white;
+}
+
+.button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #fb7413;
+  color: white;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 30px;
+}
+
+.button:hover, .button:active {
+  background-color: white;
+  color: #fb7413;
+  cursor: pointer;
+}
+
+/* Thank you state */
+.thank:not(.invisible) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.thank__rating {
+  padding: 0.5rem 0.7rem;
+  margin: 1.5rem auto 1rem auto;
+  background-color: #252d37;
+  color: #fb7413;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=style.css.map */
