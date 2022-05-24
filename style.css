@@ -34,20 +34,21 @@ a {
 }
 
 .card {
-  max-width: Min(90%, 380px);
+  max-width: Min(90%, 400px);
   padding: 2rem 1.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f262e), to(#1b1e22));
-  background: linear-gradient(#1f262e, #1b1e22);
+  background: -webkit-gradient(linear, left top, left bottom, from(#212831), to(#1b1e22));
+  background: linear-gradient(#212831, #1b1e22);
   border-radius: 15px;
 }
 
 .title {
   margin: 1rem 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .text {
   font-size: 0.95rem;
+  line-height: 1.5;
   color: #7c8798;
 }
 
@@ -89,7 +90,7 @@ a {
 
 .button {
   width: 100%;
-  padding: 0.9rem;
+  padding: 0.8rem;
   background-color: #fb7413;
   color: white;
   font-family: "Overpass", sans-serif;
@@ -131,5 +132,22 @@ a {
   background-color: #252d37;
   color: #fb7413;
   border-radius: 30px;
+}
+
+/* Desktop media query */
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+  .rate__icon {
+    padding: 1rem;
+  }
+  .title {
+    margin: 1.4rem 0 1rem 0;
+  }
+  .rate__number {
+    padding: 1rem 1.4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

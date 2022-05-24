@@ -34,19 +34,20 @@ a {
 }
 
 .card {
-  max-width: Min(90%, 380px);
+  max-width: Min(90%, 400px);
   padding: 2rem 1.5rem;
-  background: linear-gradient(hsl(213, 19%, 15%), hsl(216, 12%, 12%));
+  background: linear-gradient(hsl(213, 19%, 16%), hsl(216, 12%, 12%));
   border-radius: 15px;
 }
 
 .title {
   margin: 1rem 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .text {
   font-size: 0.95rem;
+  line-height: 1.5;
   color: $medium-grey;
 }
 
@@ -84,7 +85,7 @@ a {
 
 .button {
   width: 100%;
-  padding: 0.9rem;
+  padding: 0.8rem;
   background-color: $primary-colour;
   color: $white;
   font-family: "Overpass", sans-serif;
@@ -118,4 +119,24 @@ a {
   background-color: $dark-blue;
   color: $primary-colour;
   border-radius: 30px;
+}
+
+/* Desktop media query */
+@media screen and (min-width: 1440px) {
+  .card {
+    padding: 2rem;
+    border-radius: 30px;
+  }
+
+  .rate__icon {
+    padding: 1rem;
+  }
+
+  .title {
+    margin: 1.4rem 0 1rem 0;
+  }
+
+  .rate__number {
+    padding: 1rem 1.4rem;
+  }
 }
